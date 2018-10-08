@@ -1,0 +1,52 @@
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>TrainTime</title>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="container bg-dark">
+        <div class="header">
+            <h1>Train scheduler</h1>
+        </div>
+
+        <form action="">
+            <h1>Add Train</h1>
+            <label for="train_name">Train Name</label>
+            <input type="text" class="form-control name" id='train_name'>
+
+            <label for="destination">Destination</label>
+            <input type="text" class="form-control dest" id='destination'>
+
+            <label for="first-time">First time</label>
+            <input type="text" class="form-control time" id='first-time'>
+
+            <label for="freq">frequency</label>
+            <input type="text" class="form-control" id='freq'>
+            <button type="submit" class="btn btn-success freq" id="submit">Submit</button>
+            <span></span>
+        </form>
+
+
+        <div id="trains" class="container border border-dark"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
